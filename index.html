@@ -10,50 +10,64 @@
 </head>
 <body>
     <div class="header">
-        <h1>DevFinder</h1>
+        <h1 class="titlePage">DevFinder</h1>
     </div>
 
     <div class="searchBar">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
-        <input type="text" placeholder="Nome de usuário do GitHub">
-        <div class="btnPesquisar">
-            <button>Pesquisar</button>
+        <div class="a">
+            <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                height="24px" 
+                viewBox="0 -960 960 960" 
+                width="24px" 
+                fill="#fff"
+                class="searchIcon"
+            >
+                <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+            </svg>
+            <input type="text" placeholder="Nome de usuário do GitHub..." class="inputNome">
         </div>
+        <button class="btnPesquisar">
+            <h2 class="btnPesquisarTxt">Pesquisar</h2>
+        </button>
     </div>
 
-    <div class="cardRetorno">
+    <!-- <div class="cardRetorno">
 
         <div class="nomeFoto">
-            <img src="https://avatars.githubusercontent.com/u/59583198?v=4" alt="Imagem do Perfil">
+            <img 
+                src="https://avatars.githubusercontent.com/u/59583198?v=4" 
+                alt="Imagem do Perfil"
+                class="imgPerfil">
             <div class="userNome">
-                <h2>Efraim Fernandes</h2>
-                <h4>EfraimFernandes</h4>
+                <h2 class="Nome">Efraim Fernandes</h2>
+                <h4 class="user">EfraimFernandes</h4>
             </div>
         </div>
 
         <div class="BioDesde">
-            <h4>Essa é a Bio do meu perfil</h4>
-            <h4>Desde 06 de Jan. de 2020</h4>
+            <h4 class="bio">Essa é a Bio do meu perfil</h4>
+            <h4 class="desde">Desde 06 de Jan. de 2020</h4>
         </div>
 
         <div class="dados">
 
             <div class="dado">
-                <h3>Repositórios Públicos</h3>
-                <h1>29</h1>
+                <h3 class="dadoTitle">Repositórios Públicos</h3>
+                <h1 class="dadoNumero">29</h1>
             </div>
 
             <div class="dado">
-                <h3>Seguidores</h3>
-                <h1>4</h1>
+                <h3 class="dadoTitle">Seguidores</h3>
+                <h1 class="dadoNumero">4</h1>
             </div>
 
             <div class="dado">
-                <h3>Seguindo</h3>
-                <h1>4</h1>
+                <h3 class="dadoTitle">Seguindo</h3>
+                <h1 class="dadoNumero">4</h1>
             </div>
 
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
