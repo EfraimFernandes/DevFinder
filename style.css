@@ -1,83 +1,189 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    font-family: "Roboto", sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: #031126;
-    padding: 0 100px;
+body {
+  background-color: #031126;
+  padding: 0 100px;
+  color: #fff;
 }
 
-.header{
-    width: 90%;
-    padding: 10px 0 0 100px;
-
-    .titlePage{
-        color: #fff;
-        font-weight: 300;
-    }
+.header {
+  width: 100%;
+  padding: 20px 0 0 50px;
 }
 
-.searchBar{
-    width: 10000;
-    max-width: 80%;
-    margin: 0 100px 0 100px;
-    background-color: #1D3359;
+.header .titlePage {
+  color: #fff;
+  font-weight: 300;
+  margin: 0;
+}
+
+.searchBar {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px 0 0 50px;
+  background-color: #1D3359;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 15px;
+  border-radius: 10px;
+}
+
+.searchBar .a {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.searchBar .searchIcon {
+  margin: 10px;
+  flex-shrink: 0;
+}
+
+.searchBar .inputNome {
+  background-color: #1D3359;
+  border: none;
+  outline: none;
+  width: 100%;
+  max-width: 500px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-family: "Dosis", sans-serif;
+  margin: 10px;
+  color: #fff;
+}
+
+.searchBar .inputNome:focus {
+  border: none;
+  outline: none;
+}
+
+.btnPesquisar {
+  width: 150px;
+  background-color: #1B63E0;
+  border: none;
+  border-radius: 10px;
+  transition: ease-in-out .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btnPesquisarTxt {
+  color: #fff;
+  font-weight: 300;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.btnPesquisar:active {
+  transform: scale(1.02);
+  transition: all ease-in-out .05s;
+}
+
+.btnPesquisar:hover {
+  background-color: #1554c0;
+}
+
+.cardRetorno {
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px 0 0 50px;
+  background-color: #1D3359;
+  height: 400px;
+  border-radius: 8px;
+  padding: 30px 60px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nomeFoto {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.imgPerfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin-right: 30px;
+}
+
+.Nome {
+    color: #fff;
+    font-size: 2.2rem;
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.userLink{
+    text-decoration: none;
+}
+
+.user {
+    color: #1B63E0;
+}
+
+.BioDesde {
+    margin: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 15px;
-    border-radius: 10px;
+    width: 100%;
+}
 
-    .a{
-        display: flex;
-        align-items: center;
+.bio {
+    color: #fff;
+    font-weight: 200;
+}
 
-        .searchIcon{
-            margin: 10px;
-        }
+.desde {
+    color: #ffffffab;
+    font-weight: 200;
+}
 
-        .inputNome{
-            background-color: #1D3359;
-            border: none;
-            outline: none;
-            width: 500px;
-            height: 50px;
-            font-size: 1.5rem;
-            font-family: "Dosis", sans-serif;
-            margin: 10px;
-            color: #fff;
-        }
+.dados {
+    background-color: #031126;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    width: 300px;
+    width: 700px;
+    height: 200px;
+    border-radius: 20px;
+}
 
-        .inputNome:focus{
-            border: none;
-            outline: none;
-        }
-    }
+.dado {
+    height: 70;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    .btnPesquisar{
-        width: 150px;
-        background-color: #1B63E0;
-        border: none;
-        border-radius: 10px;        
-        transition: ease-in-out .3s;
+.dadoTitle {
+    color: #fff;
+    font-size: 1rem;
+    font-family: "Dosis", sans-serif;
+    font-weight: 300;
+}
 
-        .btnPesquisarTxt{
-            color: #fff;
-            font-weight: 300;
-        }
-    }
-
-    .btnPesquisar:active{
-        transform: scaleY(1.02);
-        transform: scaleX(1.02);
-        transition: all ease-in-out .05s;
-    }
-
-    .btnPesquisar:hover{
-        background-color: #1554c0;
-        cursor: pointer;
-    }
-
+.dadoNumero {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
 }
