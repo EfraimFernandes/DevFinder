@@ -43,7 +43,7 @@ function mostrarCard(data) {
             <div class="userNome">
                 <h2 class="Nome">${nome}</h2>
                 <a href="${perfilUrl}" class="userLink" target="_blank">
-                    <h4 class="user">${userNome}</h4>
+                    <h4 class="user">@${userNome}</h4>
                 </a>
             </div>
         </div>
