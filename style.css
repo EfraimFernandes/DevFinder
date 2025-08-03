@@ -161,7 +161,6 @@ body {
     align-items: center;
     justify-content: space-around;
     margin-top: 40px;
-    width: 300px;
     width: 700px;
     height: 200px;
     border-radius: 20px;
@@ -183,24 +182,131 @@ body {
 }
 
 .dadoNumero {
-    color: #fff;
+    color: #4da3ff;
     font-size: 3rem;
     font-weight: 400;
 }
 
 
 .SemRetorno {
-  width: 100%;
-  max-width: 1000px;
-  margin: 40px 0 0 50px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px 0 0 50px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .SemRetornoTexto {
     color: #ffffff69;
     font-weight: 200;
+}
+
+@media (max-width: 1000px) {
+    body {
+        padding: 0 50px;
+    }
+
+    .header {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .searchBar {
+        margin: 20px auto;
+        flex-direction: column;
+        align-items: stretch;
+        max-width: 100%;
+    }
+
+    .searchBar .a {
+        margin-bottom: 10px;
+    }
+
+    .searchBar .inputNome {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .btnPesquisar {
+        width: 100%;
+    }
+
+    .cardRetorno,
+    .SemRetorno {
+        margin: 20px auto;
+        padding: 20px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 20px;
+    }
+
+    .cardRetorno {
+        height: auto;
+    }
+
+    .nomeFoto {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .imgPerfil {
+        margin: 0 0 10px 0;
+    }
+
+    .BioDesde {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+    }
+
+    .desde {
+        margin-top: 10px;
+    }
+
+    .dados {
+        gap: 15px;
+        height: auto;
+        padding: 10px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 550px) {
+    .searchIcon {
+        display: none;
+    }
+
+    .inputNome {
+        font-size: 2rem;
+        height: 40px;
+    }
+
+    .btnPesquisar {
+        padding: 8px;
+    }
+
+    .cardRetorno{
+        height: auto;
+    }
+
+    .desde {
+        margin-top: 10px;
+    }
+
+    .dados {
+        width: 280px;
+        flex-direction: column;
+    }
+
+    .dadoNumero {
+        font-size: 2rem;
+    }
 }
